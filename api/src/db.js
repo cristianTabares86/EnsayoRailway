@@ -6,8 +6,9 @@ require("dotenv").config();
 
 const sequelize = new Sequelize(
 
-  "postgres://postgres:noesmentira1986@localhost/gameshop",
-  //"postgres://dbgameshop:3OvsB5VnfrwB9jPRfc2MtJrXnK9OlKJm@dpg-chb3h0ak728tp9bf0e00-a.oregon-postgres.render.com/gameshop_v2eq?ssl=true",
+  //"postgres://postgres:noesmentira1986@localhost/gameshop",
+  //"postgres://dbgameshop:3OvsB5VnfrwB9jPRfc2MtJrXnK9OlKJm@dpg-chb3h0ak728tp9bf0e00-a.oregon-postgres.render.com/gameshop?ssl=true",
+  "postgresql://postgres:fWMa6GylLS8iVWHLqbTK@containers-us-west-2.railway.app:6640/gameshop",
   {
     logging: false, // set to console.log to see the raw SQL queries
     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
